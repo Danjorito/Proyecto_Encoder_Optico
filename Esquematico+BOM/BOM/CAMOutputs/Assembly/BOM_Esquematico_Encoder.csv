@@ -1,0 +1,22 @@
+Qty;Value;Device;Package;Parts;Description;PARTNO;POPULARITY;SPICEPREFIX;Column1
+1;;NUCLEO-L452RE;NUCLEO-64;M1;No existe un outline (Layer Dimension) para esta librer?a. En su lugar se utiliz? una referencia en tDocu.;;;;
+1;10nF 0603;C-USC0603;C0603;C2;CAPACITOR, American symbol;  GCM188R72A103KA37D;37;C;
+1;1pF;C-USC0805;C0805;C1;CAPACITOR, American symbol;GCM21BR71E105KA56L;63;C;
+2;2.2k;R-US_R0805;R0805;R1, R2;RESISTOR, American symbol;CR0805-JW-222ELF;85;R;
+1;291V1022F832AB;291V1022F832ABTRAY;TRAY;ENCODER$1;;291V1022F832AB;;;
+1;4.7k;R-US_R0805;R0805;R3;RESISTOR, American symbol;RC0805FR-074K7L;85;R;
+4;WS2812B;WS2812B;WS2812B;LED$1, LED$2, LED$3, LED$4;;COM-16347;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;

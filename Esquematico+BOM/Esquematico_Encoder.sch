@@ -91,12 +91,12 @@
 <rectangle x1="-2.794" y1="-2.794" x2="2.794" y2="2.794" layer="39"/>
 </package>
 <package name="TRAY">
-<pad name="1" x="3.175" y="-6.25" drill="0.76" diameter="1.1"/>
-<pad name="2" x="1.905" y="-6.25" drill="0.76" diameter="1.1"/>
-<pad name="3" x="0.635" y="-6.25" drill="0.76" diameter="1.1"/>
-<pad name="4" x="-0.635" y="-6.25" drill="0.76" diameter="1.1"/>
-<pad name="5" x="-1.905" y="-6.25" drill="0.76" diameter="1.1"/>
-<pad name="6" x="-3.175" y="-6.25" drill="0.76" diameter="1.1"/>
+<pad name="1" x="3.175" y="-6.25" drill="0.76" diameter="0.96"/>
+<pad name="2" x="1.905" y="-6.25" drill="0.76" diameter="0.96"/>
+<pad name="3" x="0.635" y="-6.25" drill="0.76" diameter="0.96"/>
+<pad name="4" x="-0.635" y="-6.25" drill="0.76" diameter="0.96"/>
+<pad name="5" x="-1.905" y="-6.25" drill="0.76" diameter="0.96"/>
+<pad name="6" x="-3.175" y="-6.25" drill="0.76" diameter="0.96"/>
 <wire x1="6.2" y1="6.35" x2="6.2" y2="-7.4" width="0.1524" layer="51"/>
 <wire x1="-6.2" y1="6.35" x2="-6.2" y2="-7.4" width="0.1524" layer="51"/>
 <wire x1="-6.2" y1="6.35" x2="6.2" y2="6.35" width="0.1524" layer="51"/>
@@ -8507,7 +8507,6 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8671,9 +8670,6 @@ Pc 150mW</text>
 <instance part="GND13" gate="1" x="-20.32" y="-104.14" smashed="yes">
 <attribute name="VALUE" x="-22.86" y="-106.68" size="1.778" layer="96"/>
 </instance>
-<instance part="GND14" gate="1" x="15.24" y="-45.72" smashed="yes" rot="R180">
-<attribute name="VALUE" x="17.78" y="-43.18" size="1.778" layer="96" rot="R180"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -8781,11 +8777,7 @@ Pc 150mW</text>
 <junction x="-93.98" y="-76.2"/>
 <pinref part="M1" gate="-CN7" pin="GND@2"/>
 <wire x1="-99.06" y1="-60.96" x2="-93.98" y2="-60.96" width="0.1524" layer="91"/>
-<wire x1="-93.98" y1="-60.96" x2="-93.98" y2="-68.58" width="0.1524" layer="91"/>
-<pinref part="M1" gate="-CN7" pin="RESET"/>
-<wire x1="-93.98" y1="-68.58" x2="-93.98" y2="-76.2" width="0.1524" layer="91"/>
-<wire x1="-99.06" y1="-68.58" x2="-93.98" y2="-68.58" width="0.1524" layer="91"/>
-<junction x="-93.98" y="-68.58"/>
+<wire x1="-93.98" y1="-60.96" x2="-93.98" y2="-76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="M1" gate="-CN10" pin="GND@1"/>
@@ -8798,12 +8790,6 @@ Pc 150mW</text>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="-25.4" y1="-73.66" x2="-20.32" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="-73.66" x2="-20.32" y2="-101.6" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="M1" gate="-CN6" pin="RESET"/>
-<pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="20.32" y1="-53.34" x2="15.24" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="-53.34" x2="15.24" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -8903,10 +8889,12 @@ Pc 150mW</text>
 <errors>
 <approved hash="202,1,71.12,5.08,LED$4,DOUT,,,,"/>
 <approved hash="204,1,-129.54,-58.42,M1-CN7,VDD,,,,"/>
+<approved hash="202,1,-99.06,-68.58,M1-CN7,RESET,,,,"/>
 <approved hash="204,1,-99.06,-71.12,M1-CN7,+3V3,,,,"/>
 <approved hash="204,1,-99.06,-81.28,M1-CN7,VIN,,,,"/>
 <approved hash="204,1,-129.54,-93.98,M1-CN7,VBAT,,,,"/>
 <approved hash="204,1,20.32,-50.8,M1-CN6,IOREF,,,,"/>
+<approved hash="202,1,20.32,-53.34,M1-CN6,RESET,,,,"/>
 <approved hash="204,1,20.32,-55.88,M1-CN6,+3V3,,,,"/>
 <approved hash="204,1,20.32,-66.04,M1-CN6,VIN,,,,"/>
 <approved hash="204,1,-83.82,-78.74,M1-CN5,AVDD,,,,"/>
