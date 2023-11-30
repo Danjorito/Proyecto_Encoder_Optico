@@ -1,0 +1,13 @@
+../Core/Src/main.c:81:6:Set_LED	1
+../Core/Src/main.c:88:6:Set_Brightness_LED	5
+../Core/Src/main.c:102:6:Apply_LED	5
+../Core/Src/main.c:135:5:Get_Encoder_Val	1
+../Core/Src/main.c:145:5:main	17
+../Core/Src/main.c:252:6:SystemClock_Config	4
+../Core/Src/main.c:302:13:MX_TIM1_Init	5
+../Core/Src/main.c:372:13:MX_TIM2_Init	3
+../Core/Src/main.c:421:13:MX_USART2_UART_Init	2
+../Core/Src/main.c:454:13:MX_DMA_Init	1
+../Core/Src/main.c:472:13:MX_GPIO_Init	1
+../Core/Src/main.c:511:5:_write	2
+../Core/Src/main.c:526:6:Error_Handler	1
